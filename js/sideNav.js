@@ -75,8 +75,6 @@
         if (options.closeOnClick === true) {
           menu_id.on("click.itemclick", "a:not(.collapsible-header)", function(){
             var windowWidth = $(window).width();
-            console.log('windowWidth', windowWidth);
-
             if (windowWidth <= 992) {
               removeMenu();
             }
